@@ -31,9 +31,9 @@ public class ReadFileData {
 	@Test
 	public static void main(String[] args) throws Exception  {
 		
-		WebDriver driver = new FirefoxDriver();
-		//System.setProperty("webdriver.chrome.driver", "C://seleniumdrivers//chromedriver.exe");
-        //WebDriver driver=new ChromeDriver(); 
+		//WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "C://seleniumdrivers//chromedriver.exe");
+        WebDriver driver=new ChromeDriver(); 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.getCurrentUrl();
